@@ -37,4 +37,10 @@ LEFT OUTER JOIN "Manu211_Live"."sales"."SO_Items" "SO_Items" ON ("Stock_Trans_Lo
 WHERE  ("Stock_Trans_Types"."Description"=N'Return of sales issue' OR "Stock_Trans_Types"."Description"=N'Sales issue')
 
 ORDER BY "Stock_Trans_Log"."Trans_Date" DESC
+
+
+SELECT TOP (1000) [PartID]
+      ,[PartNumber]
+      ,[Description]
+  FROM [GraysonWarranty].[dbo].[PartNumbers]
  
